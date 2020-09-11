@@ -1,0 +1,283 @@
+/* General properties */
+body {
+  background-color: white;
+  padding: 50px;
+}
+
+h1 {
+  color: rgb(118, 64, 36);
+  font-family: 'Comfortaa';
+  font-size: 30px;
+  padding-top: 20px;
+  line-height: 0px;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(181, 119, 88);
+  font-family: 'Poppins';
+  font-size: 25px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Comfortaa';
+  padding-top: 15px;
+  color: rgb(118, 64, 36);
+}
+
+p {
+  line-height: 3px;
+  font-family: 'Titillium Web'
+}
+
+/* Header */
+.header-brown {
+  background-color: white;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-brown p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.header-brown img {
+  width: 140px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* .header-top img {
+  animation-duration: 1s;
+  animation-name: glissement;
+}
+@keyframes glissement {
+  from {
+    margin-left: 5%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+.coordonnees {
+  margin-top : 40px;
+}
+
+/* Partie marron */
+
+.card-brown-infos {
+  font-family: 'Titillium Web';
+  /* line-height: 3px; */
+  background-color: #cdaf95;
+  width: 750px;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.card-brown-infos h2 {
+  width: 190px;
+  border-bottom: 1px solid #764024;;
+  margin: 0 auto 30px auto;
+  padding-bottom: 7px;
+}
+
+/* Education */
+.education-paragraph {
+  padding-bottom: 20px;
+}
+
+.education-paragraph p {
+  line-height: 20px;
+}
+
+/* Languages */
+.languages-paragraph {
+  padding-bottom: 20px;
+}
+
+.languages-paragraph ul {
+  padding: 0;
+}
+
+.languages-paragraph li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.languages-paragraph span {
+  padding-right: 15px;
+}
+
+/* Passions */
+.passions-paragraph {
+  padding-bottom: 20px;
+}
+
+.passions-paragraph p {
+  line-height: 15px;
+}
+
+/* Programming */
+.programming-paragraph {
+  padding-bottom: 20px;
+}
+
+.programming-paragraph span {
+  padding-right: 15px;
+}
+
+.card-brown-infos a {
+  color: #764024;
+  text-decoration: none;
+  font-family: 'Titillium Web';
+}
+
+.card-brown-infos a:hover {
+  color: #b57758;
+}
+
+/* Photos */
+.photos {
+  display: flex;
+  margin-top: 80px;
+}
+
+.photos img {
+  width: 70%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+figure:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Titillium Web";
+  font-style: oblique;
+}
+
+.info-supp {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Caveat";
+  animation-duration: 4s;
+  animation-name: glissement;
+}
+
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Reseaux sociaux */
+.social-medias {
+  text-align: center;
+  margin: 50px;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.list-inline li a {
+  font-size: 40px;
+  margin: 8px 24px;
+  color: #764024;
+}
+
+.list-inline li a:hover {
+  color: #b57758;
+}
+
+/* Me contacter */
+label, input, textarea {
+  display: block;
+}
+
+.contact {
+  text-align: center;
+  font-family: 'Titillium Web';
+  color: #764024;
+}
+
+#message {
+  width: 40%;
+  margin: 10px auto 30px auto;
+  height: 70px;
+  font-family: 'Titillium Web';
+  resize: none;
+}
+
+input[type=submit] {
+  font-family: 'Titillium Web';
+  background-color: #CDAF95;
+  border: 5px solid #CDAF95;
+  border-radius: 3px;
+}
+
+input[type=submit]:hover {
+  background-color: #764024;
+  border: 5px solid #764024;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card-brown-infos {
+    width: 615px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-brown-infos {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-brown-infos {
+    width: 100%;
+  }
+
+  .social-medias {
+    margin: 0;
+  }
+
+  #message {
+    width: 80%;
+  }
+}
